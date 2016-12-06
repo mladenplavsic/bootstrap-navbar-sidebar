@@ -14,6 +14,9 @@ function updateNavbarClass(className) {
     })
     .addClass(className);
 
+  $('a[data-class]').removeClass('active').parent('li').removeClass('active');
+  $('a[data-class="'+className+'"]').addClass('active').parent('li').addClass('active');
+
   fixBodyPadding(className);
 
 }
