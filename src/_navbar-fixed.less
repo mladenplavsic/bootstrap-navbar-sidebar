@@ -1,10 +1,4 @@
 @import "_core";
-@import "../bower_components/bootstrap/less/mixins/nav-vertical-align";
-@import "../bower_components/bootstrap/less/mixins/vendor-prefixes";
-@import "../bower_components/bootstrap/less/mixins/tab-focus";
-@import "../bower_components/bootstrap/less/mixins/forms";
-@import "../bower_components/bootstrap/less/forms";
-@import "../bower_components/bootstrap/less/navbar";
 
 body {
   padding-top: 70px;
@@ -18,12 +12,12 @@ body {
 
 .navbar-fixed-right,
 .navbar-fixed-left {
-
-  .navbar-fixed-top;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: @zindex-navbar-fixed;
 
   @media (min-width: @screen-sm-min) {
     .navbar-sidebar();
-    position: fixed;
-    top: 0;
   }
 }
