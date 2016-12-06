@@ -2,6 +2,9 @@ $(document).ready(function () {
   $('a[data-class]').click(function () {
     updateNavbarClass($(this).attr('data-class'));
   });
+
+  updateNavbarClass('navbar-fixed-left');
+
 });
 
 function updateNavbarClass(className) {
