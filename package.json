@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-navbar-fixed-left",
+  "version": "1.0.0",
+  "description": "Transform and use Bootstrap's navbar as sidebar",
+  "m    ain": "src/navbar-fixed.left.less",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mladenplavsic/bootstrap-navbar-fixed-left.git"
+  },
+  "keywords": [
+    "navbar",
+    "fixed",
+    "left",
+    "bootstrap",
+    "sidebar",
+    "navigation"
+  ],
+  "author": "Mladen Plavsic <mladen.plavsic@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mladenplavsic/bootstrap-navbar-fixed-left/issues"
+  },
+  "homepage": "https://github.com/mladenplavsic/bootstrap-navbar-fixed-left#readme"
+}

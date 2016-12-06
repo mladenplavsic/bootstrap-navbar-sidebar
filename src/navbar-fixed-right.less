@@ -1,0 +1,25 @@
+@import "_navbar-fixed";
+
+body {
+  @media (min-width: @screen-sm-min) {
+    padding-right: @navbar-sidebar-width;
+  }
+}
+
+.navbar-fixed-right {
+  @media (min-width: @screen-sm-min) {
+    right: 0 !important;
+    left: auto !important;
+    border-width: 0 0 0 1px !important;
+
+    .dropdown-toggle {
+      .caret {
+        border-top: @caret-width-base solid transparent;
+        border-left: none;
+        border-bottom: @caret-width-base solid transparent;
+        border-right: @caret-width-base solid @dropdown-caret-color;
+      }
+    }
+
+  }
+}
