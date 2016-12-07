@@ -1,19 +1,19 @@
 @media (min-width: 768px) {
   .container {
-    width: 455px;
+    width: 503px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 675px;
+    width: 723px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 875px;
+    width: 923px;
   }
 }
-@media (min-width: 1480px) {
+@media (min-width: 1432px) {
   .container {
     width: 1170px;
   }
@@ -37,7 +37,7 @@ body {
 @media (min-width: 768px) and (min-width: 768px) {
   .navbar-fixed-right,
   .navbar-fixed-left {
-    width: 280px;
+    width: 232px;
     height: 100vh;
     border-radius: 0;
   }
@@ -73,7 +73,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    padding-right: 280px;
+    padding-right: 232px;
   }
 }
 @media (min-width: 768px) {
@@ -86,6 +86,6 @@ body {
     border-top: 4px solid transparent;
     border-left: none;
     border-bottom: 4px solid transparent;
-    border-right: 4px solid #000;
+    border-right: 4px solid;
   }
 }

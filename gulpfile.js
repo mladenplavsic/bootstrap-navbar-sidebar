@@ -4,7 +4,6 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 gulp.task('default', [
-  'less',
   'docs'
 ]);
 
@@ -20,7 +19,7 @@ gulp.task('less', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('docs', function () {
+gulp.task('docs', ['less'], function () {
   return gulp.src([
     './dist/*.min.css'
   ])
