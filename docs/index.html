@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Navbar Fixed Left or Right</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <title>Bootstrap Navbar Sidebar - Fixed to Left or Right</title>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="navbar-fixed-right.min.css">
   <link rel="stylesheet" href="navbar-fixed-left.min.css">
   <link rel="stylesheet" href="docs.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="docs.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-left">
+  <nav class="navbar navbar-inverse navbar-fixed-left">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,9 +48,25 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a data-class="navbar-fixed-top">Fixed Top</a></li>
-          <li><a data-class="navbar-fixed-left">Fixed Left</a></li>
-          <li><a data-class="navbar-fixed-right">Fixed Right</a></li>
+          <li>
+            <a data-class="navbar-fixed-left">
+              <i class="fa fa-arrow-left"></i>
+              Fixed Left
+            </a>
+          </li>
+          <li>
+            <a data-class="navbar-fixed-top">
+              <i class="fa fa-arrow-up"></i>
+              Fixed Top
+              <small>(original)</small>
+            </a>
+          </li>
+          <li>
+            <a data-class="navbar-fixed-right">
+              <i class="fa fa-arrow-right"></i>
+              Fixed Right
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -56,18 +75,47 @@
   <div class="container">
 
     <div class="jumbotron">
-      <h1>Navbar example</h1>
-      <p class="lead">Use classic Bootstrap navbar as sidebar, on left or right side.</p>
-      <p>Like when using <code>.navbar-fixed-top</code>, ass class <code>.navbar-fixed-left</code> or <code>.navbar-fixed-right</code> where needed.</p>
+      <h1>
+        Bootstrap Navbar Sidebar
+        <br>
+        <small>Fixed to Left or Right</small>
+      </h1>
+      <p>
+        <strong>
+          Use classic Bootstrap navbar as sidebar, on left or right side.
+        </strong>
+      </p>
+      <p>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/mladenplavsic/bootstrap-navbar-sidebar/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download mladenplavsic/bootstrap-navbar-sidebar on GitHub">Download</a>
+        <a class="github-button" href="https://github.com/mladenplavsic/bootstrap-navbar-sidebar/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/mladenplavsic/bootstrap-navbar-sidebar/network" aria-label="Fork mladenplavsic/bootstrap-navbar-sidebar on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/mladenplavsic/bootstrap-navbar-sidebar" data-icon="octicon-star" data-style="mega" data-count-href="/mladenplavsic/bootstrap-navbar-sidebar/stargazers" data-count-api="/repos/mladenplavsic/bootstrap-navbar-sidebar#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mladenplavsic/bootstrap-navbar-sidebar on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/mladenplavsic" data-style="mega" aria-label="Follow @mladenplavsic on GitHub">Follow @mladenplavsic</a>
+      </p>
+      <p>Same when using <code>.navbar-fixed-top</code> - add class <code>.navbar-fixed-left</code> or <code>.navbar-fixed-right</code> where needed.</p>
       <p>Click buttons below, and appropriate class will be added to example navbar.</p>
       <p>
         <span class="btn-group">
-          <a data-class="navbar-fixed-top" class="btn btn-lg btn-default">Fixed Top</a>
-          <a data-class="navbar-fixed-left" class="btn btn-lg btn-default">Fixed Left</a>
-          <a data-class="navbar-fixed-right" class="btn btn-lg btn-default">Fixed Right</a>
+          <a data-class="navbar-fixed-left" class="btn btn-lg btn-default">
+            <i class="fa fa-arrow-left"></i>
+            Fixed Left
+          </a>
+          <a data-class="navbar-fixed-top" class="btn btn-lg btn-default">
+            <i class="fa fa-arrow-up"></i>
+            Fixed Top
+            <small>(original)</small>
+          </a>
+          <a data-class="navbar-fixed-right" class="btn btn-lg btn-default">
+            <i class="fa fa-arrow-right"></i>
+            Fixed Right
+          </a>
         </span>
       </p>
     </div>
+
+    <footer>
+      Repository maintained by <a href="https://github.com/mladenplavsic">mladenplavsic</a>
+    </footer>
 
   </div>
 

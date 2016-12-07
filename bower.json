@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap-navbar-fixed-left",
+  "description": "Transform and use Bootstrap's navbar as sidebar",
+  "main": "dist/bootstrap-navbar-fixed-left.min.css",
+  "authors": [
+    "Mladen Plavsic <mladen.plavsic@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "navbar",
+    "fixed",
+    "left",
+    "bootstrap",
+    "sidebar",
+    "navigation"
+  ],
+  "homepage": "https://github.com/mladenplavsic/bootstrap-navbar-sidebar",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootswatch": "^3.3.7"
+  }
+}
