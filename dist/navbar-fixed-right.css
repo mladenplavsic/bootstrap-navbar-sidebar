@@ -66,6 +66,10 @@ body {
   .navbar-fixed-left .navbar-collapse .navbar-nav > li {
     width: 100%;
   }
+  .navbar-fixed-right .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu,
+  .navbar-fixed-left .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu {
+    top: 0;
+  }
   .navbar-fixed-right .navbar-collapse .navbar-nav.navbar-right,
   .navbar-fixed-left .navbar-collapse .navbar-nav.navbar-right {
     margin-right: 0;
@@ -82,7 +86,12 @@ body {
     left: auto !important;
     border-width: 0 0 0 1px !important;
   }
-  .navbar-fixed-right .dropdown-toggle .caret {
+  .navbar-fixed-right .dropdown .dropdown-menu {
+    left: auto;
+    right: 100%;
+    border-radius: 3px 0 0 3px;
+  }
+  .navbar-fixed-right .dropdown .dropdown-toggle .caret {
     border-top: 4px solid transparent;
     border-left: none;
     border-bottom: 4px solid transparent;
