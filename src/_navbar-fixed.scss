@@ -1,0 +1,39 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+
+$navbar-sidebar-width: 232px;
+
+@mixin navbar-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $zindex-fixed;
+
+  @include media-breakpoint-up(sm) {
+    bottom: 0;
+    width: $navbar-sidebar-width;
+    flex-flow: column nowrap;
+
+    .navbar-collapse {
+      flex-grow: 0;
+      flex-direction: column;
+
+      .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+
+        .nav-item {
+          width: 100%;
+
+          .dropdown-menu {
+            top: 0;
+          }
+        }
+      }
+
+    }
+
+  }
+}
