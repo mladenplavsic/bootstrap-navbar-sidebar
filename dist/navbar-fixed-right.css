@@ -1,17 +1,23 @@
+@media (min-width: 768px) {
+  body {
+    margin-right: 232px; } }
+
 .navbar.fixed-right {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1030; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .navbar.fixed-right {
       bottom: 0;
       width: 232px;
-      flex-flow: column nowrap; }
+      flex-flow: column nowrap;
+      align-items: flex-start; }
       .navbar.fixed-right .navbar-collapse {
         flex-grow: 0;
-        flex-direction: column; }
+        flex-direction: column;
+        width: 100%; }
         .navbar.fixed-right .navbar-collapse .navbar-nav {
           flex-direction: column;
           width: 100%; }
@@ -19,7 +25,7 @@
             width: 100%; }
             .navbar.fixed-right .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
               top: 0; } }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .navbar.fixed-right {
       left: auto; }
       .navbar.fixed-right .navbar-nav .nav-item .dropdown-toggle:after {

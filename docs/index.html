@@ -17,99 +17,60 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href>Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link">Contact</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item">Action</a>
+            <a class="dropdown-item">Another action</a>
+            <a class="dropdown-item">Something else here</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-            <a class="dropdown-item" href="#">One more separated link</a>
+            <a class="dropdown-item">Separated link</a>
+            <a class="dropdown-item">One more separated link</a>
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-class="fixed-left">
+            <i class="fa fa-arrow-left"></i>
+            Fixed Left
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-class="fixed-top">
+            <i class="fa fa-arrow-up"></i>
+            Fixed Top
+            <small>(original)</small>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-class="fixed-right">
+            <i class="fa fa-arrow-right"></i>
+            Fixed Right
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <!--<nav class="navbar navbar-inverse navbar-fixed-left">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a data-class="navbar-fixed-left">
-              <i class="fa fa-arrow-left"></i>
-              Fixed Left
-            </a>
-          </li>
-          <li>
-            <a data-class="navbar-fixed-top">
-              <i class="fa fa-arrow-up"></i>
-              Fixed Top
-              <small>(original)</small>
-            </a>
-          </li>
-          <li>
-            <a data-class="navbar-fixed-right">
-              <i class="fa fa-arrow-right"></i>
-              Fixed Right
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>-->
-
   <div class="container">
-
     <div class="jumbotron">
       <h1>
         Bootstrap Navbar Sidebar
@@ -122,24 +83,24 @@
         </strong>
       </p>
       <p>
-        <a class="github-button" href="https://github.com/mladenplavsic/bootstrap-navbar-sidebar" data-icon="octicon-star" data-style="mega" data-count-href="/mladenplavsic/bootstrap-navbar-sidebar/stargazers" data-count-api="/repos/mladenplavsic/bootstrap-navbar-sidebar#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mladenplavsic/bootstrap-navbar-sidebar on GitHub">Star</a>
-        <a class="github-button" href="https://github.com/mladenplavsic/bootstrap-navbar-sidebar/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/mladenplavsic/bootstrap-navbar-sidebar/network" aria-label="Fork mladenplavsic/bootstrap-navbar-sidebar on GitHub">Fork</a>
-        <a class="github-button" href="https://github.com/mladenplavsic" data-style="mega" aria-label="Follow @mladenplavsic on GitHub">Follow @mladenplavsic</a>
+        <a class="github-button" href="https://github.com/ntkme/github-buttons" data-icon="octicon-star" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/ntkme/github-buttons/fork" data-icon="octicon-repo-forked" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/mladenplavsic" aria-label="Follow @mladenplavsic on GitHub">Follow @mladenplavsic</a>
       </p>
-      <p>Same as when using <code>.fixed-top</code> - add class <code>.fixed-left</code> or <code>.fixed-right</code> where needed.</p>
+      <p>Same as when using <code>.fixed-top</code> for navbar - add class <code>.fixed-left</code> or <code>.fixed-right</code> where needed.</p>
       <p>Click buttons below, and appropriate class will be added to example navbar.</p>
       <p>
         <span class="btn-group">
-          <a data-class="fixed-left" class="btn btn-lg btn-default">
+          <a data-class="fixed-left" class="btn btn-default">
             <i class="fa fa-arrow-left"></i>
             Fixed Left
           </a>
-          <a data-class="fixed-top" class="btn btn-lg btn-default">
+          <a data-class="fixed-top" class="btn btn-default">
             <i class="fa fa-arrow-up"></i>
             Fixed Top
             <small>(original)</small>
           </a>
-          <a data-class="fixed-right" class="btn btn-lg btn-default">
+          <a data-class="fixed-right" class="btn btn-default">
             <i class="fa fa-arrow-right"></i>
             Fixed Right
           </a>

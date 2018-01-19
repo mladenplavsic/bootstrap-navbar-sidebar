@@ -1,9 +1,15 @@
 @import "navbar-fixed";
 
+body {
+  @include media-breakpoint-up($navbar-sidebar-breakpoint) {
+    margin-right: $navbar-sidebar-width;
+  }
+}
+
 .navbar {
   &.fixed-right {
     @include navbar-sidebar;
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up($navbar-sidebar-breakpoint) {
       left: auto;
 
       .navbar-nav {

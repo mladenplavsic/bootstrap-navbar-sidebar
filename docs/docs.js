@@ -17,23 +17,23 @@ function updateNavbarClass(className) {
   $('a[data-class]').removeClass('active').parent('li').removeClass('active');
   $('a[data-class="'+className+'"]').addClass('active').parent('li').addClass('active');
 
-  fixBodyPadding(className);
+  fixBodyMargin(className);
 
 }
 
-function fixBodyPadding(className) {
+function fixBodyMargin(className) {
   if (/fixed-(left|right)/.test(className)) {
     $('body').removeAttr('style');
     if (className === 'fixed-right') {
-      $('body').css('paddingLeft', 0);
+      $('body').css('marginLeft', 0);
     } else {
-      $('body').css('paddingRight', 0);
+      $('body').css('marginRight', 0);
     }
   } else {
     $('body').css({
-      "padding-right": 0,
-      "padding-left": 0,
-      "padding-top": '70px'
+      "margin-right": 0,
+      "margin-left": 0,
+      "padding-top": '90px'
     });
   }
 }
