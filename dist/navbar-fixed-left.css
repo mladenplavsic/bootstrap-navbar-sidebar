@@ -34,7 +34,7 @@ body {
   width: 100%;
   z-index: 1030;
 }
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .navbar-fixed-right,
   .navbar-fixed-left {
     width: 232px;
@@ -49,6 +49,7 @@ body {
   }
   .navbar-fixed-right .navbar-header,
   .navbar-fixed-left .navbar-header {
+    float: none;
     padding-left: 15px;
     padding-right: 15px;
   }
