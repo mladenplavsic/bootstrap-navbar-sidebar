@@ -77,7 +77,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    padding-right: 232px;
+    margin-right: 232px;
   }
 }
 @media (min-width: 768px) {
