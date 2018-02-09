@@ -41,7 +41,9 @@ body {
     border-radius: 0;
   }
   .navbar-fixed-right .container,
-  .navbar-fixed-left .container {
+  .navbar-fixed-left .container,
+  .navbar-fixed-right .container-fluid,
+  .navbar-fixed-left .container-fluid {
     padding-right: 0;
     padding-left: 0;
     width: auto;
