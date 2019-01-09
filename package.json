@@ -13,12 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mladenplavsic/bootstrap-navbar-fixed-left.git"
+    "url": "git+https://github.com/mladenplavsic/bootstrap-navbar-sidebar.git"
   },
   "keywords": [
     "navbar",
     "fixed",
     "left",
+    "right",
     "bootstrap",
     "sidebar",
     "navigation"
@@ -26,7 +27,13 @@
   "author": "Mladen Plavsic <mladen.plavsic@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mladenplavsic/bootstrap-navbar-fixed-left/issues"
+    "url": "https://github.com/mladenplavsic/bootstrap-navbar-sidebar/issues"
   },
-  "homepage": "https://github.com/mladenplavsic/bootstrap-navbar-fixed-left#readme"
+  "homepage": "https://mladenplavsic.github.io/bootstrap-navbar-sidebar",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
