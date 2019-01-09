@@ -1,0 +1,35 @@
+@import "navbar-fixed";
+
+body {
+  @include media-breakpoint-up($navbar-sidebar-breakpoint) {
+    margin-right: $navbar-sidebar-width;
+  }
+}
+
+.navbar {
+  &.fixed-right {
+    @include navbar-sidebar;
+    @include media-breakpoint-up($navbar-sidebar-breakpoint) {
+      left: auto;
+
+      .navbar-nav {
+        .nav-item {
+          .dropdown-toggle {
+            &:after {
+              border-top: $caret-width solid transparent;
+              border-left: none;
+              border-bottom: $caret-width solid transparent;
+              border-right: $caret-width solid;
+              vertical-align: baseline;
+            }
+          }
+
+          .dropdown-menu {
+            left: auto;
+            right: 100%;
+          }
+        }
+      }
+    }
+  }
+}
