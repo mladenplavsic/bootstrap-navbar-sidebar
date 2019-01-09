@@ -1,6 +1,5 @@
 body {
-  padding-top: 90px;
-  min-height: 200vh; }
+  padding-top: 90px; }
   @media (min-width: 768px) {
     body {
       padding-top: 0; } }

@@ -3,7 +3,6 @@
 
 body {
   padding-top: 90px;
-  min-height: 200vh;
 
   @include media-breakpoint-up($navbar-sidebar-breakpoint) {
     padding-top: 0;
@@ -40,8 +39,6 @@ body {
           }
         }
       }
-
     }
-
   }
 }
