@@ -1,4 +1,4 @@
-# bootstrap-navbar-fixed-left
+# bootstrap-navbar-sidebar
 
 Bootstrap navbars fixed to left or right
 

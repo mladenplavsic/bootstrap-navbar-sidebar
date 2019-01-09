@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-navbar-fixed-left",
+  "name": "bootstrap-navbar-sidebar",
   "version": "4.0.0",
   "description": "Transform and use Bootstrap's navbar as sidebar",
   "main": "docs/index.html",
