@@ -1,6 +1,15 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
 
+body {
+  padding-top: 90px;
+  min-height: 200vh;
+
+  @include media-breakpoint-up($navbar-sidebar-breakpoint) {
+    padding-top: 0;
+  }
+}
+
 @mixin navbar-sidebar {
   position: fixed;
   top: 0;

@@ -1,39 +1,37 @@
 $(document).ready(function () {
-  $('a[data-class]').click(function () {
-    updateNavbarClass($(this).attr('data-class'));
-  });
+    $('[data-class]').click(function () {
+        updateNavbarClass($(this).attr('data-class'));
+    });
 
-  updateNavbarClass('fixed-left');
-
+    updateNavbarClass('fixed-left');
 });
 
 function updateNavbarClass(className) {
-  $('nav')
-    .removeClass(function (index, css) {
-      return (css.match(/(^|\s)fixed-\S+/g) || []).join(' ');
-    })
-    .addClass(className);
+    $('nav')
+        .removeClass(function (index, css) {
+            return (css.match(/(^|\s)fixed-\S+/g) || []).join(' ');
+        })
+        .addClass(className);
 
-  $('a[data-class]').removeClass('active').parent('li').removeClass('active');
-  $('a[data-class="'+className+'"]').addClass('active').parent('li').addClass('active');
+    $('[data-class]').removeClass('active').parent('li').removeClass('active');
+    $('[data-class="' + className + '"]').addClass('active').parent('li').addClass('active');
 
-  fixBodyMargin(className);
-
+    fixBodyMargin(className);
 }
 
 function fixBodyMargin(className) {
-  if (/fixed-(left|right)/.test(className)) {
-    $('body').removeAttr('style');
-    if (className === 'fixed-right') {
-      $('body').css('marginLeft', 0);
+    if (/fixed-(left|right)/.test(className)) {
+        $('body').removeAttr('style');
+        if (className === 'fixed-right') {
+            $('body').css('marginLeft', 0);
+        } else {
+            $('body').css('marginRight', 0);
+        }
     } else {
-      $('body').css('marginRight', 0);
+        $('body').css({
+            "margin-right": 0,
+            "margin-left": 0,
+            "padding-top": '90px'
+        });
     }
-  } else {
-    $('body').css({
-      "margin-right": 0,
-      "margin-left": 0,
-      "padding-top": '90px'
-    });
-  }
 }

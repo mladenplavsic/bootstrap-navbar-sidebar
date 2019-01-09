@@ -1,3 +1,10 @@
+body {
+  padding-top: 90px;
+  min-height: 200vh; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: 0; } }
+
 @media (min-width: 768px) {
   body {
     margin-right: 232px; } }
