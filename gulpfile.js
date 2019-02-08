@@ -12,10 +12,14 @@ gulp.task('sass', function () {
     './src/navbar-fixed-right.scss',
     './src/navbar-fixed-left.scss'
   ])
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+        outputStyle: 'expanded'
+    }).on('error', sass.logError))
     .pipe(gulp.dest('dist'))
     .pipe(cleanCSS())
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({
+        suffix: '.min'
+    }))
     .pipe(gulp.dest('dist'));
 });
 
