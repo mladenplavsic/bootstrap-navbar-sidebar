@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-navbar-sidebar",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Transform and use Bootstrap's navbar as sidebar",
   "main": "docs/index.html",
   "dependencies": {},
