@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bootstrap Navbar Sidebar - Fixed to Left or Right</title>
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.min.css"
-          integrity="sha256-8CkGrzjOaLKQcuIPUmdEEJQ07Q83rdadwUrePJTaI4I="
-          crossorigin="anonymous" />
+          id="theme_link"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.min.css"/>
     <link rel="stylesheet" href="navbar-fixed-right.min.css">
     <link rel="stylesheet" href="navbar-fixed-left.min.css">
     <link rel="stylesheet" href="docs.css">
@@ -102,23 +101,33 @@
         <p>Same as when using <code>.fixed-top</code> for navbar - add class <code>.fixed-left</code> or <code>.fixed-right</code>
             where needed.</p>
         <p>Click buttons below, and appropriate class will be added to example navbar.</p>
-        <p>
         <div class="btn-group" role="group">
-            <button type="button" data-class="fixed-left" class="btn btn-secondary">
+            <button type="button" data-class="fixed-left" class="btn btn-primary">
                 <i class="fa fa-arrow-left"></i>
                 Fixed Left
             </button>
-            <button type="button" data-class="fixed-top" class="btn btn-secondary">
+            <button type="button" data-class="fixed-top" class="btn btn-primary">
                 <i class="fa fa-arrow-up"></i>
                 Fixed Top
                 <small>(original)</small>
             </button>
-            <button type="button" data-class="fixed-right" class="btn btn-secondary">
+            <button type="button" data-class="fixed-right" class="btn btn-primary">
                 <i class="fa fa-arrow-right"></i>
                 Fixed Right
             </button>
         </div>
-        </p>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <label>
+                    Select another bootstrap theme from
+                    <a href="https://bootswatch.com/" target="_blank">Bootswatch</a>
+                </label>
+                <select class="form-control width-md" id="theme_select" onchange="selectTheme(value)"></select>
+            </div>
+        </div>
     </div>
 
     <footer>

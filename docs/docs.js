@@ -1,9 +1,41 @@
+var themes = [
+    'cerulean',
+    'cosmo',
+    'cyborg',
+    'darkly',
+    'flatly',
+    'journal',
+    'litera',
+    'lumen',
+    'lux',
+    'materia',
+    'minty',
+    'pulse',
+    'sandstone',
+    'simplex',
+    'sketchy',
+    'slate',
+    'solar',
+    'spacelab',
+    'superhero',
+    'united',
+    'yeti'
+];
+
 $(document).ready(function () {
     $('[data-class]').click(function () {
         updateNavbarClass($(this).attr('data-class'));
     });
 
     updateNavbarClass('fixed-left');
+
+    themes.forEach(function (theme) {
+        $('#theme_select').append($('<option>', {
+            value: theme,
+            text: theme.charAt(0).toUpperCase() + theme.slice(1),
+            selected: theme === 'materia'
+        }));
+    });
 });
 
 function updateNavbarClass(className) {
@@ -34,4 +66,8 @@ function fixBodyMargin(className) {
             "padding-top": '90px'
         });
     }
+}
+
+function selectTheme(theme) {
+    $('#theme_link').attr('href', 'https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/' + theme + '/bootstrap.min.css');
 }
