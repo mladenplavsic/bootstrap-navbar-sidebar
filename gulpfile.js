@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
+var gls = require('gulp-live-server');
 
 gulp.task('default', [
   'docs'
@@ -34,4 +35,9 @@ gulp.task('watch', function () {
   gulp.watch('./src/*.scss', [
     'docs'
   ]);
+});
+
+gulp.task('serve', function() {
+  var server = gls.static(['./docs/']);
+  server.start();
 });
